@@ -9,10 +9,19 @@ import matplotlib.image as mpimg
 import matplotlib.font_manager as fm
 from scipy.signal import argrelextrema
 from string import capwords
+import os
 
 episodesdf = pd.read_csv('../data/simpsons_episodes.csv')
 linesdf = pd.read_csv('../data/simpsons_script_lines.csv')
 
+#Create output directory
+try:
+    if not os.path.isdir('../output'):
+        os.mkdir('../output')
+except OSError:
+    print('Creation of output folder failed')
+else:
+    print('Successfully created output directory')
 
 #Remove stage directions
 linesdf = linesdf[linesdf['speaking_line']==True]
