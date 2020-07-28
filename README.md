@@ -27,3 +27,7 @@ Running the code requires following these steps:
 
 * [PyCharm](https://www.jetbrains.com/pycharm/) - IDE
 * [Python3](https://www.python.org/) - Interpreter
+
+### License
+
+This project is licensed under the [Creative Commons Zero v1.0 Universal License](https://creativecommons.org/publicdomain/zero/1.0/legalcode) - read LICENSE file for more details
